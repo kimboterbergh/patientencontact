@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chirurgie – SEZZ Zottegem</title>
+  <style>
+    :root{
+      /* TODO: vervang door de officiële SEZZ accentkleur (hex) */
+      --accent:#006a8e;
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --text:#111827;
+      --muted:#6b7280;
+      --border:#e5e7eb;
+    }
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);}
+    .wrap{max-width:860px;margin:0 auto;padding:20px;}
+    .hero{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:0 1px 8px rgba(0,0,0,.04);}
+    h1{font-size:20px;margin:0 0 6px;}
+    .sub{color:var(--muted);margin:0 0 14px;line-height:1.35}
+    .btnrow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;
+      padding:12px 14px;border-radius:12px;border:1px solid var(--border);
+      text-decoration:none;font-weight:600;
+    }
+    .btn.primary{background:var(--accent);color:#fff;border-color:transparent;}
+    .btn.secondary{background:#fff;color:var(--text);}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:14px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px;box-shadow:0 1px 8px rgba(0,0,0,.04);}
+    .doc{display:flex;gap:12px;align-items:flex-start;}
+    .photo{width:64px;height:64px;border-radius:14px;object-fit:cover;background:#ddd;flex:0 0 auto;}
+    .name{margin:0;font-size:16px;}
+    .role{margin:2px 0 8px;color:var(--muted);font-size:13px;line-height:1.35}
+    .list{margin:0;padding-left:18px;color:var(--text);font-size:13px;line-height:1.35}
+    .meta{margin-top:10px;font-size:13px;color:var(--muted);line-height:1.35}
+    .meta a{color:var(--accent);text-decoration:none;font-weight:600}
+    .footer{margin-top:14px;color:var(--muted);font-size:12px;line-height:1.4}
+    .warn{margin-top:10px;padding:12px;border-radius:14px;border:1px solid #f5c2c7;background:#fff5f5}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Chirurgie – SEZZ Zottegem</h1>
+      <p class="sub">
+        Scanbaar door patiënten & verwijzers. Maak snel een afspraak via het patiëntenportaal of bel het secretariaat.
+      </p>
+
+      <div class="btnrow">
+        <!-- Online afspraken -->
+        <a class="btn primary" href="https://portaal.sezz.be/" target="_blank" rel="noopener">
+          📅 Online afspraak (Mijn Sint-Elisabeth)
+        </a>
+
+        <!-- 1 “belknop” als gemeenschappelijk secretariaat -->
+        <a class="btn secondary" href="tel:+3293648454">
+          📞 Bel secretariaat heelkunde (09 364 84 54)
+        </a>
+      </div>
+
+      <div class="warn">
+        <strong>Dringend?</strong> Bij acute of ernstige klachten: contacteer <strong>112</strong> of ga naar <strong>Spoedgevallen</strong>.
+      </div>
+    </div>
+
+    <div class="grid">
+
+      <!-- Dr. Kim Boterbergh -->
+      <div class="card">
+        <div class="doc">
+          <!-- TODO: voeg later een foto-URL toe (of laat placeholder staan) -->
+          <img class="photo" src="TODO_KIM_FOTO_URL" alt="Dr. Kim Boterbergh" onerror="this.style.display='none'">
+          <div>
+            <p class="name"><strong>Dr. Kim Boterbergh</strong></p>
+            <p class="role">Algemene, abdominale en schildklierchirurgie – robotchirurgie</p>
+          </div>
+        </div>
+        <ul class="list">
+          <li>Robotische buikwandchirurgie (complexe herniachirurgie)</li>
+          <li>Minimaal invasieve colorectale chirurgie</li>
+          <li>Schildklierchirurgie</li>
+        </ul>
+        <div class="meta">
+          <div>E-mail: <a href="mailto:kim.boterbergh@sezz.be">kim.boterbergh@sezz.be</a></div>
+          <div>Mobiel (arts): <a href="tel:+32499107897">+32 499 10 78 97</a></div>
+          <div>Privépraktijk: Kluisdreef 71, 9300 Aalst</div>
+        </div>
+      </div>
+
+      <!-- Dr. Stijn De Sutter -->
+      <div class="card">
+        <div class="doc">
+          <!-- TODO: plak hier de directe foto-URL (zie tip onderaan) -->
+          <img class="photo" src="TODO_DESUTTER_FOTO_URL" alt="Dr. Stijn De Sutter" onerror="this.style.display='none'">
+          <div>
+            <p class="name"><strong>Dr. Stijn De Sutter</strong></p>
+            <p class="role">Algemene & abdominale chirurgie</p>
+          </div>
+        </div>
+        <ul class="list">
+          <li>Colorectale chirurgie • proctologie</li>
+          <li>Hernia- & oncologische GI-chirurgie</li>
+          <li>Bariatrische chirurgie • robotchirurgie</li>
+        </ul>
+        <div class="meta">
+          <div>Tel: <a href="tel:+3293648454">09 364 84 54</a></div>
+          <div>E-mail: <a href="mailto:stijn.desutter@sezz.be">stijn.desutter@sezz.be</a></div>
+          <div>Nevenlocatie: De Ronde, Berchemweg 5, 9700 Oudenaarde</div>
+        </div>
+      </div>
+
+      <!-- Dr. Chris Matthys -->
+      <div class="card">
+        <div class="doc">
+          <!-- TODO: plak hier de directe foto-URL (zie tip onderaan) -->
+          <img class="photo" src="TODO_MATTHYS_FOTO_URL" alt="Dr. Chris Matthys" onerror="this.style.display='none'">
+          <div>
+            <p class="name"><strong>Dr. Chris Matthys</strong></p>
+            <p class="role">Algemene & abdominale chirurgie</p>
+          </div>
+        </div>
+        <ul class="list">
+          <li>Maagchirurgie • liesbreuken • buikwandbreuken</li>
+          <li>Dun- en dikdarmheelkunde</li>
+          <li>Bariatrische heelkunde (laparoscopie/robot)</li>
+        </ul>
+        <div class="meta">
+          <div>Tel: <a href="tel:+3293648928">09 364 89 28</a></div>
+          <div>E-mail: <a href="mailto:komc@sezz.be">komc@sezz.be</a></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      <div><strong>Adres SEZZ:</strong> Godveerdegemstraat 69, 9620 Zottegem</div>
+      <div>Problemen met online portaal of nog geen patiënt? Bel voor afspraak: <a href="tel:+3293648111">09 364 81 11</a>.</div>
+    </div>
+  </div>
+</body>
+</html>
